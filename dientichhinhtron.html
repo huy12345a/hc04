@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>nhap ban kinh R</h2>
+<input type="text" id="a">
+<button onclick="tinh()">tinh</button>
+<h2 id="S"></h2>
+<h2 id="C"></h2>
+<script>
+    function tinh() {
+        let y = 3.14;
+        let x = document.getElementById('a').value;
+        document.getElementById('S').innerHTML="S hinh tron la " + (x*x*y);
+        document.getElementById('C').innerHTML="C hinh tron la " + (x*2*y);
+
+    }
+</script>
+
+</body>
+</html>
