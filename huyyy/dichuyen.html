@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="tải%20xuống.jpg" alt=" " style="width: 100px; top: 100px; left: 100px; position: absolute" id="x">
+<button onclick="phai()">sang phai</button>
+<button onclick="trai()">sang trai</button>
+<button onclick="tren()">len tren</button>
+<button onclick="xuong()">xuong duoi</button>
+<script>
+    function phai() {
+        let a = document.getElementById('x');
+        a.style.left = parseInt(a.style.left) + 20 + 'px'
+
+    }
+    function trai() {
+        let a = document.getElementById('x');
+        a.style.left = parseInt(a.style.left) - 20 + 'px'
+
+    }
+    function tren() {
+        let a = document.getElementById('x');
+        a.style.top = parseInt(a.style.top) - 20 + 'px'
+
+    }
+    function xuong() {
+        let a = document.getElementById('x');
+        a.style.top = parseInt(a.style.top) + 20 + 'px'
+
+    }
+</script>
+</body>
+</html>
