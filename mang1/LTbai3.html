@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [1, 2, 11, 15, 16, 19, 4, 5, 45, 13]
+    let max = 0, tong = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (max >= a[i]) {
+            max = max
+        } else {
+            max = a[i]
+        }
+        tong += a[i];
+
+    }
+    document.write(max + '<br>')
+    document.write('TB: ' + (tong/a.length))
+</script>
+</body>
+</html>

@@ -6,7 +6,48 @@
 </head>
 <body>
 <script>
-    console.log("huy")
+  let a = [3,2,4,5,12,32,1,5,6]
+  //in cac phan tu chan
+  for (let i = 0; i <a.length ; i++) {
+      if (a[i]%2==0){
+          document.write(a[i] +' ')
+          document.write('<br>')
+      }
+  }
+  //tong cac phan tu le
+  let tong=0
+  for (let i = 0; i <a.length ; i++) {
+      if(a[i]%2==1){
+          tong+=a[i];
+          document.write(tong)
+          document.write('<br>')
+      }
+  }
+  //tich chia het cho 3
+  let tich=1
+  for (let i = 0; i <a.length ; i++) {
+      if ((a[i]%3==0)){
+          tich*=a[i]
+          document.write(tich)
+          document.write('<br')
+      }
+  }
+  //cac phan tu lon hon 10
+  let count=0
+  for (let i = 0; i <a.length ; i++) {
+      if (a[i]>10){
+          count++
+      }document.write(count)
+
+  }
+  //tim min
+  let min = a[0]
+  for (let i = 0; i <a.length ; i++) {
+      if(a[i]<min){
+          min=a[i]
+      }
+  }
+  document.write(min)
 </script>
 </body>
 </html>

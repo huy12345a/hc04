@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+
+    for (let i = 0; i < 10; i++) {
+        let b = +prompt('phan thu thu ' + (i + 1))
+        arr.push(b)
+    }
+    let N = prompt('so can kiem tra');
+    for (let j = 0; j < arr.length ; j++) {
+        if (arr[j] == N) {
+            for (let k = j; k <arr.length ; k++) {
+                arr[k] = arr[k + 1];
+            }
+        }
+
+    }
+    arr[arr.length-1]=0;
+    arr.pop()
+    document.write(arr);
+</script>
+</body>
+</html>
