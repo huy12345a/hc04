@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('chuoi 1')
+    let b = prompt('chuoi 2')
+    let dem = 0
+    if (a.length !== b.length) {
+        document.write('2 chuoi ko giong nhau')
+    } else {
+        for (let i = 0; i <a.length ; i++) {
+            if(a[i]!==b[i]){
+                document.write('2 chuoi khong giong nhau')
+                dem++ ;
+                break;
+            }
+            if (dem=0){
+                document.write('2 chuoi giong nhau')
+
+            }
+
+        }
+    }
+
+</script>
+</body>
+</html>
