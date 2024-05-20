@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = prompt('nhap vao chuoi')
+    let kq = ''
+    for (let i = 0; i <x.length ; i++) {
+        if (x[i]>='a'&&x[i]<='z'){
+            kq+=x[i].toUpperCase()
+        }else if (x[i]>='A'&& x[i]<='Z'){
+            kq+=x[i].toLowerCase()
+        }else {
+            kq+=x[i]
+        }
+
+    }document.write(kq)
+
+</script>
+</body>
+</html>
