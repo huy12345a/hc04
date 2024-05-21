@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let donvi= ['muoi', 'mot', 'hai', 'ba', 'bon', 'nam', ' sau','bay','tam','chin']
+    let so = +prompt('nhap vao so')
+    let kq=''
+    if(so==0){
+        kq='khong'
+    }else if(so<10){
+        kq=donvi[so]
+    }else  if(so<20){
+        kq='muoi'
+        if(so%10 !==0){
+            kq+=donvi[so%10]
+        }
+    }
+</script>
+</body>
+</html>
