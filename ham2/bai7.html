@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function doiChoHaiSo(a,b) {
+        let c = a;
+        a = b;
+        b = c;
+        return a+''+b
+    }
+    let x = +prompt('nhap vao so thu nhat')
+    let y = +prompt('nhap vao so thu hai')
+    document.write(doiChoHaiSo(x,y))
+</script>
+</body>
+</html>

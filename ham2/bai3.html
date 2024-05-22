@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinhGiaiTHua(a){
+        let tich = 1;
+        for (let i = a; i >0 ; i--) {
+            tich*=i
+        }
+        return('giai thua cua '+ a+ ' la : ' + tich)
+    }
+    let b = +prompt('nhap vao so can tinh')
+    document.write(tinhGiaiTHua(b))
+</script>
+</body>
+</html>
